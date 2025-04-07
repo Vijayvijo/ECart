@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.onrender.com']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -86,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'shopcart',  # Your database name
         'USER': 'root',  # MySQL username
-        'PASSWORD': '12345',  # MySQL password
+        'PASSWORD': '4263',  # MySQL password
         'HOST': 'localhost',  # Localhost for local development
         'PORT': '3307',  # Change if using a different MySQL port
     }
