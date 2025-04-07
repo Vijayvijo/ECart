@@ -83,14 +83,15 @@ WSGI_APPLICATION = 'vj_project.wsgi.application'
 # Database settings (MySQL)
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'shopcart',  # Your database name
-        'USER': 'root',  # MySQL username
-        'PASSWORD': '4263',  # MySQL password
-        'HOST': 'localhost',  # Localhost for local development
-        'PORT': '3307',  # Change if using a different MySQL port
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('ECart'),
+        'USER': os.environ.get('ECart'),
+        'PASSWORD': os.environ.get('4263'),
+        'HOST': os.environ.get('ecart.render.com'),
+        'PORT': '5432',
     }
 }
+
 
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
