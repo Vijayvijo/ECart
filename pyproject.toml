@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ecart"
+version = "0.1.0"
+description = "E-commerce Django project"
+authors = ["Your Name <your@email.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.1.6"
+mysqlclient = "^2.2.1"
+whitenoise = "^6.6.0"
+gunicorn = "^21.2.0"
+django-jazzmin = "^2.6.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

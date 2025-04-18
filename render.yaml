@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: shopcart
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn vj_project.wsgi"
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        value: your-very-secure-secret-key
+      - key: DEBUG
+        value: False
+      - key: ALLOWED_HOSTS
+        value: shopcart.onrender.com
